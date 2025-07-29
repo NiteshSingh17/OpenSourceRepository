@@ -25,19 +25,19 @@ Basic usage:
 
 ```typescript
 import { OpenSource } from 'opensourcerepository';
-import * as package from '../package.json';
+import * as packageJSON from '../package.json';
 
 // Initialize with package.json
-OpenSource({ package });
+OpenSource({ package: packageJSON });
 ```
 
 Advanced usage with custom options:
 
 ```typescript
-import * as package from '../package.json';
+import * as packageJSON from '../package.json';
 
 OpenSource({
-  package: package,
+  package: packageJSON,
   showMessage: true,
   showPackages: true,
   message: "✨ Contributions are welcome!",
