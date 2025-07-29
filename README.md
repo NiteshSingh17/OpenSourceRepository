@@ -22,19 +22,20 @@ yarn add opensourcerepository
 Basic usage:
 
 ```typescript
-import { initMyLib } from 'opensourcerepository';
+import { OpenSource } from 'opensourcerepository';
+import * as package from '../package.json';
 
 // Initialize with package.json
-initMyLib({
-  package: require('./package.json')
-});
+OpenSource({ package });
 ```
 
 Advanced usage with custom options:
 
 ```typescript
-initMyLib({
-  package: require('./package.json'),
+import * as package from '../package.json';
+
+OpenSource({
+  package: package,
   showMessage: true,
   showPackages: true,
   message: "✨ Contributions are welcome!",

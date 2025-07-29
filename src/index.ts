@@ -9,7 +9,7 @@ export interface InitOptions {
   buildWith?: ProjectAnalysis['frameworks'] 
 }
 
-export function initMyLib(options: InitOptions) {
+export function OpenSource(options: InitOptions) {
   const data: InitOptions = {
     package: options.package,
     showMessage: options.showMessage ?? true,
@@ -17,7 +17,7 @@ export function initMyLib(options: InitOptions) {
       options.message ?? "🚀 We're open source and open to contributions!",
     showPackages: options.showPackages ?? true,
   };
-  
+
   const analysis = analyzeProject(options.package);
 
   // Build the log string and styles array
