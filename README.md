@@ -2,6 +2,8 @@
 
 A simple utility to let developers know your project is open source and highlight the frameworks/technologies used in your project with beautiful icons.
 
+![Preview](assets/preview.png)
+
 ## Features
 
 - 🎨 Display frameworks/technologies used with their icons
